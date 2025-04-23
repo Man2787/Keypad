@@ -8,7 +8,7 @@ This script enables the [Pimoroni Pico RGB Keypad Base](https://shop.pimoroni.co
 2. Download the [CircuitPython Library Bundle](https://circuitpython.org/libraries).
 3. Copy the contents of the `lib` folder from the downloaded bundle to the `lib` folder on your Pico.
 
-> **Note:**  
+> [!NOTE]
 > If you’re running low on space, you only need to copy the following files:
 > - The `adafruit_hid` folder  
 > - The `adafruit_dotstar.mpy` file  
