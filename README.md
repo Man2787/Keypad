@@ -17,4 +17,4 @@ This script enables the [Pimoroni Pico RGB Keypad Base](https://shop.pimoroni.co
 
 You can either:
 - Use the provided [keypad configuration file](/KeypadSave.save) to load a premade setup, or  
-- Create your own custom configuration using the keypad configuration creator available here: [Keypad Interface Tool](https://github.com/Man2787/Keypad-interface)
+- Create your own custom configuration using the keypad configuration creator available here: [Keypad Interface Tool](https://github.com/Man2787/KeypadConfiguration)
