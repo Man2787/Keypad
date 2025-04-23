@@ -1,12 +1,20 @@
-# About
-This is a script for the [pico rgb keypad](https://shop.pimoroni.com/products/pico-rgb-keypad-base) to be able to emulate keyboard presses.
+# Pico RGB Keypad Keyboard Emulator
 
-# Instalation
-1. Follow [this guide](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython) to install CircuitPython.
-2. To install the librarys required download the [Library Bundle](https://circuitpython.org/libraries) and put the contents of the downloaded folders lib folder onto your Raspberry Pi.
+This script enables the [Pimoroni Pico RGB Keypad Base](https://shop.pimoroni.com/products/pico-rgb-keypad-base) to emulate keyboard key presses using CircuitPython.
 
-> [!NOTE]
-> if your Raspberry Pi dosent have enough space on it you can also only bring the folder labled **adafruit_hid** and the file **adafruit_dotstar.mpy** onto your Raspberry Pi.
+## Installation
 
-# Usage
-you can use the provided [keypad configuration file](/KeypadSave.save) to use a premade configuration, or if you want to make a custom configuration you can use my keypad configuration creator [here](https://github.com/Man2787/Keypad-interface)
+1. Follow [this guide](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython) to install CircuitPython on your Raspberry Pi Pico.
+2. Download the [CircuitPython Library Bundle](https://circuitpython.org/libraries).
+3. Copy the contents of the `lib` folder from the downloaded bundle to the `lib` folder on your Pico.
+
+> **Note:**  
+> If you’re running low on space, you only need to copy the following files:
+> - The `adafruit_hid` folder  
+> - The `adafruit_dotstar.mpy` file  
+
+## Usage
+
+You can either:
+- Use the provided [keypad configuration file](/KeypadSave.save) to load a premade setup, or  
+- Create your own custom configuration using the keypad configuration creator available here: [Keypad Interface Tool](https://github.com/Man2787/Keypad-interface)
