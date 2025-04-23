@@ -1,20 +1,47 @@
-# Pico RGB Keypad Keyboard Emulator
+# Keypad Configuration Tool
 
-This script enables the [Pimoroni Pico RGB Keypad Base](https://shop.pimoroni.com/products/pico-rgb-keypad-base) to emulate keyboard key presses using CircuitPython.
+This is a graphical configuration tool for creating and editing key bindings for the [Pimoroni Pico RGB Keypad](https://shop.pimoroni.com/products/pico-rgb-keypad-base). The tool provides a virtual 4x4 keypad interface that allows you to visually assign colors, key codes, and behaviors (like key repeat) for each button, and then save or load your configuration.  
+It is intended to be used with my [Keypad Software](https://github.com/Man2787/Keypad)
+
+
+## Features
+
+- Visual 4x4 keypad layout with color selection
+
+- Assign up to 3 keys per button
+
+- Toggle key repeat behavior
+
+- Copy/paste button settings with clipboard support
+
+- Save and load configuration files (`KeypadSave.save`)
+
 
 ## Installation
 
-1. Follow [this guide](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython) to install CircuitPython on your Raspberry Pi Pico.
-2. Download the [CircuitPython Library Bundle](https://circuitpython.org/libraries).
-3. Copy the contents of the `lib` folder from the downloaded bundle to the `lib` folder on your Pico.
+1. Make sure Python 3.7+ is installed.
 
-> **Note:**  
-> If you’re running low on space, you only need to copy the following files:
-> - The `adafruit_hid` folder  
-> - The `adafruit_dotstar.mpy` file  
+2. Install the required Python packages:
+
+```bash
+pip install dearpygui pyperclip
+```
+
 
 ## Usage
 
-You can either:
-- Use the provided [keypad configuration file](/KeypadSave.save) to load a premade setup, or  
-- Create your own custom configuration using the keypad configuration creator available here: [Keypad Interface Tool](https://github.com/Man2787/Keypad-interface)
+Run the tool with:
+```bash
+python KeypadConfig.py
+```
+Once the GUI launches, you can:
+
+* Click any button on the virtual keypad to open an inspector window.
+* Edit the button's color, pressed color, key bindings, and repeat setting.
+* Use the menu bar to save or load configurations to/from KeypadSave.save.
+
+> **Note:**  
+> Make sure to save your configuration before closing the app to preserve your changes.
+
+> **Important:**  
+> At the moment this is unable to save directly to the Raspberry Pi so you have to manualy bring the KeypadSave.save file onto the board.
